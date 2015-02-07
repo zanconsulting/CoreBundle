@@ -1,5 +1,5 @@
 services:
     zan.core.quick_logger.listener:
-        class: Zan\CoreBundle\Listener\QuicklogListener
+        class: Zan\CoreBundle\Listener\QuickLogListener
         tags:
             - { name: kernel.event_listener, event: kernel.terminate, method: onKernelTerminate, priority: 200 }
